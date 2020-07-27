@@ -11,7 +11,7 @@
   <body>
     <div class="w3-container">
       <h1>Регистрация</h1>
-      <form action="" method="post">
+      <form action="check.php" method="post">
         <input
           type="text"
           class="w3-input w3-border"
@@ -19,8 +19,6 @@
           id="login"
           placeholder="Введите логин"
         /><br />
-      </form>
-      <form action="" method="post">
         <input
           type="text"
           class="w3-input w3-border"
@@ -28,17 +26,15 @@
           id="name"
           placeholder="Введите имя"
         /><br />
-      </form>
-      <form action="" method="post">
         <input
           type="password"
           class="w3-input w3-border"
-          name="password"
-          id="password"
+          name="pass"
+          id="pass"
           placeholder="Введите пароль"
         /><br />
+        <button class="w3-ripple" type="submit">Зарегистрировать</button>
       </form>
-      <button class="w3-ripple">Зарегистрировать</button>
     </div>
   </body>
 </html>
