@@ -15,6 +15,9 @@
   </head>
   <body>
     <div class="conteiner mt-4">
+        <?php 
+        if($_COOKIE['user'] == '') :
+        ?>
       <div class="row">
         <div class="col">
           <h1>Регистрация</h1>
@@ -64,6 +67,8 @@
           </form>
         </div>
       </div>
+<?php endif;?>
+
     </div>
   </body>
 </html>
