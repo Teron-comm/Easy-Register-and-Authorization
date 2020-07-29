@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,inital-sacle=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="conteiner mt-4">
-        <?php 
-        if($_COOKIE['user'] == '') :
-        ?>
+      <?php 
+      if($_COOKIE['user'] == '') :
+      ?>
       <div class="row">
         <div class="col">
           <h1>Регистрация</h1>
@@ -67,8 +67,9 @@
           </form>
         </div>
       </div>
-<?php endif;?>
-
+      <?php else:?>
+        <p>Привет <?=$_COOKIE['user']?>. Чтобы выйти нажмите здесь <a href="/exit.php">здесь</a>.</p>
+      <?php endif;?>
     </div>
   </body>
 </html>
